@@ -17,7 +17,7 @@ const Navbar = () => {
       <a href="/">
         <img src={logo} alt="website logo" />
       </a>
-      <ul>
+      <ul className="nav-list">
         <li>
           <a href="#home">Home</a>
         </li>

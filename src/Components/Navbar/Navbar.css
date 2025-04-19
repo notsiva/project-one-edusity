@@ -23,7 +23,7 @@ ul {
   align-items: center;
 }
 
-ul li {
+.nav-list li {
   /* display: inline-block; */
   list-style: none;
   margin: 5px 20px;
@@ -34,4 +34,17 @@ ul li {
 .dark-nav {
   background: #212ea0;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-list li {
+    margin: 5px 10px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .nav-list {
+    display: none;
+  }
 }

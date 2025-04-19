@@ -45,3 +45,10 @@ a {
   background: #212ea0;
   color: #fff;
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
