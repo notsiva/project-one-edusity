@@ -33,3 +33,8 @@
 .slider-wrapper {
   overflow-x: hidden;
 }
+@media (max-width: 650px) {
+  .back-btn,
+  .next-btn {
+padding: 15px;  }
+}

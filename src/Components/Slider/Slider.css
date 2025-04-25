@@ -34,3 +34,22 @@
   overflow: hidden;
   transition: 0.5s;
 }
+@media (max-width: 650px) {
+  .item {
+    padding: 6px 10px;
+  }
+  .item p {
+    margin-top: 12px;
+    font-size: 12px;
+  }
+  .profile img {
+    width: 40px;
+  }
+  .item h3,
+  .item h4 {
+    font-size: 14px;
+  }
+  .slider {
+    width: 400%;
+  }
+}

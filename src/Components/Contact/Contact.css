@@ -65,14 +65,13 @@
 .right-section span {
   margin: 20px 0;
 }
-
-@media screen and (max-width: 830px) {
+@media (max-width: 830px) {
   .contact {
+    display: flex;
     flex-direction: column;
-
     gap: 30px;
   }
-  .right-section{
+  .right-section {
     width: 100%;
   }
 }

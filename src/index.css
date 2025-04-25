@@ -9,6 +9,7 @@
 }
 body {
   background-color: #f5f5f5f5;
+  font-size: 100%;
 }
 a {
   text-decoration: none;
@@ -46,9 +47,9 @@ a {
   color: #fff;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1150px) {
   .container {
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }

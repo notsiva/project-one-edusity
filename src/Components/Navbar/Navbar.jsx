@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 
 import logo from "../../../assets/logo.png";
+import menuIcon from "../../../assets/menu-icon.png";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -12,12 +13,16 @@ const Navbar = () => {
     });
   }, []);
 
+  const [hiddenMenu, setHiddenMenu] = useState(false);
+  const toggleMenu = () => {
+    hiddenMenu ? setHiddenMenu(false) : setHiddenMenu(true);
+  };
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <a href="/">
         <img src={logo} alt="website logo" />
       </a>
-      <ul className="nav-list">
+      <ul className={hiddenMenu ? "" : "hide-menu-icon"}>
         <li>
           <a href="#home">Home</a>
         </li>
@@ -39,6 +44,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <img src={menuIcon} alt="" className="menu-icon" onClick={toggleMenu} />
     </nav>
   );
 };

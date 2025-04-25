@@ -17,3 +17,12 @@
   text-align: center;
 }
 
+@media (max-width: 830px) {
+  .gallery {
+    flex-wrap: wrap;
+  }
+  .gallery img {
+    width: 46%;
+    margin-bottom: 24px;
+  }
+}
