@@ -3,6 +3,7 @@ import "./Navbar.css";
 
 import logo from "../../../assets/logo.png";
 import menuIcon from "../../../assets/menu-icon.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [sticky, setSticky] = useState(false);
@@ -24,24 +25,34 @@ const Navbar = () => {
       </a>
       <ul className={hiddenMenu ? "" : "hide-menu-icon"}>
         <li>
-          <a href="#home">Home</a>
+          <Link to="hero" smooth={true} offset={50} duration={0}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href="#program">Program</a>
+          <Link to="program" smooth={true} offset={-260} duration={0}>
+            Program
+          </Link>
         </li>
         <li>
-          <a href="#about"> About Us </a>
+          <Link to="about" smooth={true} offset={-150} duration={0}>
+            About Us
+          </Link>
         </li>
         <li>
-          <a href="#campus">Campus</a>
+          <Link to="campus" smooth={true} offset={-260} duration={0}>
+            Campus
+          </Link>
         </li>
         <li>
-          <a href="#testimonials">Testimonials</a>
+          <Link to="testimonials" smooth={true} offset={-260} duration={0}>
+            Testimonials
+          </Link>
         </li>
         <li>
-          <a href="#contact">
+          <Link to="contact" smooth={true} offset={-260} duration={0}>
             <button className="btn">Contact us</button>
-          </a>
+          </Link>
         </li>
       </ul>
       <img src={menuIcon} alt="" className="menu-icon" onClick={toggleMenu} />
